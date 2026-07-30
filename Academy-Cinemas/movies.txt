@@ -1,0 +1,8 @@
+Academy Cinemas – Movie Reference
+
+Now Playing
+1. Ben-Hur
+2. The Day the Earth Stood Still
+3. Vertigo
+
+More movie descriptions, posters, and showtimes will be added in the next parts of the tutorial.

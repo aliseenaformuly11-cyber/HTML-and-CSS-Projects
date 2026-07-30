@@ -1,0 +1,295 @@
+/* Passion One font imported from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400&display=swap');
+/* Yesteryear font imported from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+/* Creates global CSS variables that can be reused throughout the file. */
+:root {
+  --main-color: rgb(126, 133, 130);
+  --main-accent-color: rgb(237, 192, 3);
+  --transparent-main-color: rgba(126, 133, 130, 0.8);
+  --secondary-color: rgba(128, 0, 0, 0.8);
+  --accent-color: rgb(36, 36, 36);
+  --accent-text-color: rgb(255, 255, 255);
+  --main-font-family: 'Passion One', sans-serif;
+  --secondary-font-family: 'Yesteryear', cursive;
+}
+
+/* Leaves space above bookmark destinations for the sticky desktop navigation bar. */
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-image: url("../images/theater-curtain.png");
+  /* The first value fills the width; the second stretches the background vertically. */
+  background-size: 100% 120%;
+  background-attachment: fixed;
+  /* Removes the left-to-right scrollbar. */
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--secondary-color);
+  border-bottom: 5px solid rgb(98, 0, 0);
+  height: 100px;
+}
+
+/* Academy Cinemas title in the navbar */
+.navbar-brand {
+  color: var(--main-accent-color);
+  font-family: var(--main-font-family);
+  font-size: 45px;
+  padding-left: 30px;
+}
+
+.nav-link {
+  color: var(--main-accent-color);
+  font-family: var(--main-font-family);
+  font-size: 35px;
+}
+
+/* Affects the hover state of navbar links. */
+.nav-link:hover {
+  color: var(--transparent-main-color);
+  text-shadow: 0 0 3px rgba(237, 119, 3, 0.7);
+}
+
+/* Sets the color of a clicked or active navbar link. */
+.nav-link:focus {
+  color: var(--accent-text-color);
+  text-shadow: 0 0 3px rgba(237, 119, 3, 0.7);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem;
+}
+
+/* Movie dropdown menu */
+/* Targets the dropdown containing the movie links. */
+.dropdown-menu {
+  border: none;
+  /* Removes Bootstrap's thin border. */
+  border-radius: 0;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--main-color);
+  /* Removes Bootstrap's default top and bottom padding. */
+  padding: 0;
+}
+
+.dropdown-item {
+  color: var(--accent-color);
+  font-family: var(--main-font-family);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  /* Padding helps center the text vertically. */
+  border-bottom: 2px solid rgba(98, 52, 10, 0.6);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--accent-text-color);
+  background-color: var(--main-color);
+}
+
+/* Mobile menu */
+.navbar-toggler {
+  border: none;
+  transition: 0.5s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
+  transition: 0.5s ease;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(237,119,3)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Header image */
+#header-image {
+  padding-top: 150px;
+}
+
+/* General styling */
+h1 {
+  font-family: var(--main-font-family);
+  color: var(--main-accent-color);
+  text-shadow: 0 0 10px black;
+  text-align: center;
+  font-size: 100px;
+}
+
+/* Movie cards and movie section */
+.container {
+  padding: 100px;
+}
+
+h3 {
+  font-family: var(--main-font-family);
+  font-size: 50px;
+}
+
+h4 {
+  font-family: var(--secondary-font-family);
+  font-size: 25px;
+}
+
+h5 {
+  font-family: var(--main-font-family);
+  font-size: 30px;
+}
+
+.lead {
+  font-weight: 600;
+}
+
+/* Changes the cursor from text selection to the default arrow over card text. */
+h1, h3, h4, h5, p {
+  cursor: default;
+}
+
+.card {
+  border: 5px solid var(--main-color);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.spacer {
+  padding-top: 50px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* Customized Bootstrap buttons */
+/* Provides the main style for elements using Bootstrap's button class. */
+.btn {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  color: var(--accent-text-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+}
+
+.btn:focus {
+  /* Overrides Bootstrap's dark border after a button is clicked. */
+  border-color: transparent;
+  background-color: var(--main-color);
+  color: var(--accent-text-color);
+}
+
+.btn:hover {
+  border-color: transparent;
+  background-color: var(--main-color);
+  color: var(--accent-text-color);
+}
+
+/* Yellow buttons used in the Tickets and Contact sections. */
+.yellow-button,
+.yellow-button:hover,
+.yellow-button:focus {
+  background-color: var(--main-accent-color);
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 25px;
+  color: var(--accent-text-color);
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Ticket cards */
+/* Specifically styles cards inside the Tickets section without changing movie cards. */
+#tickets .card {
+  padding: 40px;
+  height: 250px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.form-select {
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  border: 3px solid var(--main-color);
+  transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus {
+  border-color: var(--secondary-color);
+  /* Overrides Bootstrap's default box shadow. */
+  box-shadow: none;
+  transition: border-color 0.5s ease-in;
+}
+
+/* Number-of-tickets input styling */
+input[type="number"] {
+  width: 70px;
+  padding: 5px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  transition: border-color 0.5s ease-in;
+}
+
+input[type="number"]:focus {
+  border: 3px solid var(--secondary-color);
+  transition: border-color 0.5s ease-in;
+  /* Removes the outline created by the browser. */
+  outline: none;
+}
+
+/* Contact Form styling */
+.form-control {
+  border: 3px solid var(--main-color);
+  transition: 1s ease;
+}
+
+/* Overrides Bootstrap's form-control focus effect. */
+.form-control:focus {
+  color: #212529;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.25rem var(--main-color);
+}
+
+/* Positions the Contact form Submit button on the right side. */
+#contact-submit {
+  float: right;
+}
+
+/* Footer styling */
+footer {
+  border-top: 5px solid var(--main-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Negative side margins extend the footer to the page edges. */
+  margin: 0 -15px 0 -15px;
+}
+
+.footer-text,
+.footer-text:hover,
+.footer-text:focus {
+  font-family: var(--main-font-family);
+  color: var(--accent-text-color);
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* Styles the footer image separately and overrides general image styling. */
+.footer-image {
+  width: auto;
+  height: 130px;
+}

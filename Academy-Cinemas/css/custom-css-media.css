@@ -1,0 +1,36 @@
+/* Responsive formula: 50px minimum, 100px maximum, 320px minimum viewport, 1920px maximum viewport. */
+@media (min-width: 320px) {
+  h1 {
+    font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  h4 {
+    font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+/* Styles for the collapsed mobile navigation menu. */
+@media (max-width: 990px) {
+  .navbar-collapse {
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98, 0, 0);
+    /* Removes overlap between the navbar and collapsed navigation area. */
+    margin-top: 14px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    scroll-padding-top: 300px;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 50px;
+  }
+}
