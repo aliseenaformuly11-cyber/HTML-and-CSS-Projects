@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali Seena Formuly's HTML and CSS portfolio website.">
+    <title>Ali Seena Formuly | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Go to home">ASF<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">HTML &amp; CSS portfolio</p>
+                <h1>Hi, I'm <span>Ali Seena Formuly.</span></h1>
+                <p class="intro">I am learning to build clean, responsive, and accessible websites with HTML and CSS.</p>
+                <a class="button" href="#projects">View my projects</a>
+            </div>
+            <div class="monogram" aria-hidden="true">
+                <span>ASF</span>
+            </div>
+        </section>
+
+        <section id="about" class="section section-light">
+            <p class="eyebrow">About me</p>
+            <h2>Building a strong web-development foundation.</h2>
+            <p>I am a web-development student focused on creating web pages that are clear, organized, and easy to use. I enjoy learning how thoughtful HTML structure and responsive CSS work together to create a polished website experience.</p>
+            <div class="skill-list" aria-label="Skills being practised">
+                <span>Semantic HTML</span>
+                <span>Responsive CSS</span>
+                <span>Accessibility</span>
+                <span>Web layouts</span>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="eyebrow">Course work</p>
+            <h2>Projects and skills in progress.</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <p class="card-number">01</p>
+                    <h3>HTML Foundations</h3>
+                    <p>Practice with headings, links, images, lists, forms, and well-organized page structure.</p>
+                    <p class="tools">HTML</p>
+                </article>
+                <article class="project-card">
+                    <p class="card-number">02</p>
+                    <h3>Responsive Layouts</h3>
+                    <p>Practice creating flexible layouts that look good on desktop, tablet, and mobile screens.</p>
+                    <p class="tools">CSS &middot; Media queries</p>
+                </article>
+                <article class="project-card project-card-featured">
+                    <p class="card-number">03</p>
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website that brings together my HTML and CSS course skills.</p>
+                    <p class="tools">HTML &middot; CSS</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section profile-section">
+            <p class="eyebrow">Profiles</p>
+            <h2>Follow my progress.</h2>
+            <p>My GitHub repository will contain the full source code for my HTML and CSS course projects.</p>
+            <div class="profile-links">
+                <a class="button button-secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">&nearr;</span></a>
+                <a class="button button-outline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn profile <span aria-hidden="true">&nearr;</span></a>
+            </div>
+            <p class="profile-note">Replace these two links with Ali Seena Formuly's real profile URLs before publishing.</p>
+        </section>
+
+        <section id="contact" class="section section-light">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's connect.</h2>
+            <p>Use the form below to get in touch.</p>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="button" type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ali Seena Formuly. Built with HTML and CSS.</p>
+    </footer>
+</body>
+</html>
